@@ -1,0 +1,173 @@
+/* Header Layout */
+header {
+    background-color: var(--amazon-black);
+    color: var(--white);
+}
+
+.navbar-main {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+    gap: 10px;
+}
+
+.nav-logo {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.nav-logo:hover {
+    border: 1px solid var(--white);
+    border-radius: 2px;
+}
+
+.nav-logo img {
+    height: 30px;
+    margin-top: 5px;
+}
+
+/* Location Picker */
+.nav-location {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 9px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 12px;
+    color: #ccc;
+    min-width: 80px;
+}
+
+.nav-location:hover {
+    border: 1px solid var(--white);
+    border-radius: 2px;
+}
+
+.nav-location span:last-child {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 14px;
+}
+
+/* Search Bar */
+.nav-search {
+    flex-grow: 1;
+    display: flex;
+    height: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.search-category-select {
+    background-color: #f3f3f3;
+    border: none;
+    padding: 0 10px;
+    border-right: 1px solid #cdcdcd;
+    color: #555;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-icon-btn {
+    background-color: #febd69;
+    border: none;
+    width: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon-btn:hover {
+    background-color: #f3a847;
+}
+
+/* Nav Right Items */
+.nav-right-item {
+    padding: 8px 9px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+}
+
+.nav-right-item:hover {
+    border: 1px solid var(--white);
+    border-radius: 2px;
+}
+
+.nav-line-1 {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.nav-line-2 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.nav-cart {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cart-icon-container {
+    position: relative;
+    width: 38px;
+    height: 30px;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    left: 14px;
+    color: #f08804;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* Sub Navbar */
+.navbar-sub {
+    background-color: var(--amazon-dark-blue);
+    height: 39px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.nav-sub-item {
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-sub-item:hover {
+    border: 1px solid var(--white);
+}
+
+.nav-menu-icon {
+    font-weight: 700;
+    font-size: 16px;
+}
