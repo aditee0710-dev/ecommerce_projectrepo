@@ -1,0 +1,305 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Clone</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f1f3f6;
+}
+
+.header{
+  background:#2874f0;
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:10px 20px;
+  gap:20px;
+}
+
+.logo h2{
+  font-size:24px;
+}
+.logo span{
+  color:yellow;
+}
+
+.search{
+  flex:1;
+}
+.search input{
+  width:100%;
+  padding:10px;
+  border:none;
+  border-radius:4px;
+}
+
+.header-links a{
+  color:white;
+  margin-left:15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.categories{
+  background:white;
+  display:flex;
+  justify-content:space-around;
+  padding:15px;
+  font-size:14px;
+  flex-wrap:wrap;
+}
+
+.cat{
+  cursor:pointer;
+}
+
+.banner{
+  background:linear-gradient(to right,#0f2027,#203a43,#2c5364);
+  color:white;
+  padding:50px;
+  margin:15px;
+  border-radius:8px;
+}
+
+.banner-text h1{
+  font-size:28px;
+}
+.banner-text h2{
+  margin:10px 0;
+}
+.banner-text p{
+  font-size:20px;
+  margin-bottom:15px;
+}
+.banner-text button{
+  padding:10px 20px;
+  border:none;
+  background:#ff9f00;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.deals{
+  background:white;
+  margin:15px;
+  padding:20px;
+  border-radius:8px;
+}
+
+.deals h2{
+  margin-bottom:15px;
+}
+
+.deal-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:15px;
+}
+
+.deal-card{
+  text-align:center;
+  padding:10px;
+}
+
+.deal-card img{
+  width:100%;
+  height:150px;
+  object-fit:contain;
+}
+
+.deal-card span{
+  color:green;
+  font-weight:bold;
+}
+
+
+.footer{
+  text-align:center;
+  padding:15px;
+  color:#555;
+}
+
+.banner{
+  background: linear-gradient(to right,#0f2027,#203a43,#2c5364);
+  color: white;
+  padding: 40px;
+  margin: 15px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.banner img{
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.categories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.category-card{
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+  color: #2874f0;
+}
+
+
+
+
+@media(max-width:768px){
+  .header{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .header-links{
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <h2>Flipkart</h2>
+    <small>Explore <span>Plus+</span></small>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Search for Products, Brands and More">
+  </div>
+
+  <div class="header-links">
+    <a href="#">Login</a>
+    <a href="#">Cart</a>
+    <a href="#">Become a Seller</a>
+  </div>
+</header>
+
+<section class="categories">
+  <div class="category-card">
+    <img src="https://pbs.twimg.com/profile_images/1825860394109358080/sGq0kZ7f_400x400.jpg"  width="150" height="150" style="object-fit:cover;">
+    <p>Minutes</p>
+  </div>
+  <div class="category-card">
+    <img src="https://t3.ftcdn.net/jpg/17/80/86/90/360_F_1780869050_dVnSZgg2CSz1B9AZg5sVhvNrFeNehFtf.jpg"  width="150" height="150" style="object-fit:cover;">
+    <p>Mobiles & Tablets</p>
+  </div>
+  <div class="category-card">
+    <img src="https://www.shutterstock.com/image-photo/smiling-fashionable-couple-looking-each-260nw-2427771751.jpg" width="150" height="150" style="object-fit:cover;">
+    <p>Fashion</p>
+  </div>
+  <div class="category-card">
+    <img src="https://www.shutterstock.com/image-photo/modern-household-appliances-near-blue-260nw-2444724181.jpg"  width="150" height="150" style="object-fit:cover;">
+    <p>Electronics</p>
+  </div>
+  <div class="category-card">
+    <img src="https://www.shutterstock.com/image-vector/smart-tv-vector-illustration-remote-260nw-2629214345.jpg" width="150" height="150" style="object-fit:cover;">
+    <p>TVs & Appliances</p>
+  </div>
+  <div class="category-card">
+    <img src="data:image/jpeg;base64,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"  width="150" height="150" style="object-fit:cover;">
+    <p>Home & Furniture</p>
+  </div>
+  <div class="category-card">
+   <img src="https://img.freepik.com/free-vector/passenger-airplane-isolated_1284-41822.jpg?semt=ais_hybrid&w=740&q=80" width="150" height="150" style="object-fit:cover;">
+   <p>Flight Bookings</p>
+  </div>
+  <div class="category-card">
+  <img src="https://png.pngtree.com/png-vector/20250527/ourmid/pngtree-cartoon-bear-holding-honey-pot-png-image_16392384.png" width="150" height="150" style="object-fit:cover;">
+   <p>Beauty &Food</p>
+   </div>
+  <div class="category-card">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZA8uwSHOgI93E8g1f9nB39GcPtwaTYkYrCg&s" width="150" height="150" style="object-fit:cover;">
+   <p>Grocery</p>
+   </div>
+</section>
+<section class="banner">
+  <div class="banner-text">
+    <h1>No.1 Selling Android Smartphone</h1>
+    <h2>Samsung Galaxy S24</h2>
+    <p>From ₹47,999</p>
+    <button>Shop Now</button>
+  </div>
+  <div class="banner-img">
+    <img src="https://www.mytrendyphone.eu/images/Samsung-Galaxy-S24-128GB-Amber-Yellow-8806095299631-29012024-01-p.webp" width="150" height="150" style="object-fit:cover;">
+  </div>
+</section>
+
+<section class="deals">
+  <h2>Top Deals</h2>
+
+  <div class="deal-grid">
+    <div class="deal-card">
+      <img src="http://projectoreviews.com/wp-content/uploads/2017/06/91GRK5dZ0EL._SL1500_.jpg">
+      <p>Projectors</p>
+      <span>From ₹4,999</span>
+    </div>
+
+    <div class="deal-card">
+      <img src="https://static.bhphoto.com/images/images2000x2000/1490053916_1319165.jpg">
+      <p>Bluetooth Speakers</p>
+      <span>From ₹1,299</span>
+    </div>
+
+    <div class="deal-card">
+      <img src="https://img.freepik.com/free-photo/view-computer-monitor-display_23-2150757453.jpg?w=2000">
+      <p>Monitors</p>
+      <span>From ₹7,999</span>
+    </div>
+
+    <div class="deal-card">
+      <img src="https://www.topvaluereviews.net/wp-content/uploads/2019/04/71TSinb4usL._SL1500_.jpg">
+      <p>Camera</p>
+      <span>From ₹12,999</span>
+    </div>
+
+    <div class="deal-card">
+      <img src="https://m.media-amazon.com/images/I/61icsCcbdKL._SL1500_.jpg">
+      <p>Smart Watches</p>
+      <span>From ₹1,499</span>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  | Aditi Tiwari | 2025B01010839 | CSE-12 |
+</footer>
+
+</body>
+</html>
