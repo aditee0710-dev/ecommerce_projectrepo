@@ -17,8 +17,8 @@ body{
 }
 
 .header{
-  background:#2874f0;
-  color:white;
+  background:white;
+  color:#2874f0;
   display:flex;
   align-items:center;
   padding:10px 20px;
@@ -30,6 +30,7 @@ body{
 }
 .logo span{
   color:yellow;
+  font-weight:bold;
 }
 
 .search{
@@ -40,10 +41,11 @@ body{
   padding:10px;
   border:none;
   border-radius:4px;
+  background-color: lightgray;
 }
 
 .header-links a{
-  color:white;
+  color:black;
   margin-left:15px;
   text-decoration:none;
   font-weight:bold;
@@ -175,9 +177,6 @@ body{
   color: #2874f0;
 }
 
-
-
-
 @media(max-width:768px){
   .header{
     flex-direction:column;
@@ -187,28 +186,59 @@ body{
     text-align:center;
   }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: black;
+    padding: 40px 60px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.footer-column h4 {
+    color: #878787;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.footer-column a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 </style>
 </head>
-
 <body>
-
 <header class="header">
   <div class="logo">
     <h2>Flipkart</h2>
     <small>Explore <span>Plus+</span></small>
   </div>
-
   <div class="search">
     <input type="text" placeholder="Search for Products, Brands and More">
   </div>
-
   <div class="header-links">
-    <a href="#">Login</a>
-    <a href="#">Cart</a>
+    <a href="login.html" class="login-link">👤 Login</a>
+    <a href="cart.html" class="cart-link">🛒 Cart</a>
     <a href="#">Become a Seller</a>
   </div>
 </header>
-
 <section class="categories">
   <div class="category-card">
     <img src="https://pbs.twimg.com/profile_images/1825860394109358080/sGq0kZ7f_400x400.jpg"  width="150" height="150" style="object-fit:cover;">
@@ -258,35 +288,29 @@ body{
     <img src="https://www.mytrendyphone.eu/images/Samsung-Galaxy-S24-128GB-Amber-Yellow-8806095299631-29012024-01-p.webp" width="150" height="150" style="object-fit:cover;">
   </div>
 </section>
-
 <section class="deals">
   <h2>Top Deals</h2>
-
   <div class="deal-grid">
     <div class="deal-card">
       <img src="http://projectoreviews.com/wp-content/uploads/2017/06/91GRK5dZ0EL._SL1500_.jpg">
       <p>Projectors</p>
       <span>From ₹4,999</span>
     </div>
-
     <div class="deal-card">
       <img src="https://static.bhphoto.com/images/images2000x2000/1490053916_1319165.jpg">
       <p>Bluetooth Speakers</p>
       <span>From ₹1,299</span>
     </div>
-
     <div class="deal-card">
       <img src="https://img.freepik.com/free-photo/view-computer-monitor-display_23-2150757453.jpg?w=2000">
       <p>Monitors</p>
       <span>From ₹7,999</span>
     </div>
-
     <div class="deal-card">
       <img src="https://www.topvaluereviews.net/wp-content/uploads/2019/04/71TSinb4usL._SL1500_.jpg">
       <p>Camera</p>
       <span>From ₹12,999</span>
     </div>
-
     <div class="deal-card">
       <img src="https://m.media-amazon.com/images/I/61icsCcbdKL._SL1500_.jpg">
       <p>Smart Watches</p>
@@ -294,12 +318,47 @@ body{
     </div>
   </div>
 </section>
-
-
-
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>ABOUT</h4>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Flipkart Stories</a>
+            <a href="#">Press</a>
+            <a href="#">Corporate Information</a>
+        </div>
+        <div class="footer-column">
+            <h4>GROUP COMPANIES</h4>
+            <a href="#">Myntra</a>
+            <a href="#">Cleartrip</a>
+            <a href="#">Shopsy</a>
+        </div>
+        <div class="footer-column">
+            <h4>HELP</h4>
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellation & Returns</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="footer-column">
+            <h4>CONSUMER POLICY</h4>
+            <a href="#">Cancellation & Returns</a>
+            <a href="#">Terms Of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+            <a href="#">Grievance Redressal</a>
+            <a href="#">EPR Compliance</a>
+            <a href="#">FSSAI Food Safety Connect App</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
 <footer class="footer">
   | Aditi Tiwari | 2025B01010839 | CSE-12 |
 </footer>
-
 </body>
 </html>

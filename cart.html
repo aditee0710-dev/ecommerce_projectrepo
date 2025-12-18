@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Cart</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#f1f3f6;
+}
+.navbar{
+  background:#2874f0;
+  padding:12px 20px;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.cart-text{
+  font-size:16px;
+}
+.cart-container{
+  width:90%;
+  max-width:900px;
+  margin:40px auto;
+  background:white;
+  padding:40px 20px;
+  border-radius:4px;
+  text-align:center;
+}
+
+.cart-img{
+  width:150px;
+  height:150px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  background:#e0e0e0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:50px;
+  color:#878787;
+}
+.cart-container h2{
+  font-size:22px;
+  margin-bottom:10px;
+}
+
+.cart-container p{
+  color:#555;
+  margin-bottom:25px;
+}
+.shop-btn{
+  display:inline-block;
+  padding:12px 30px;
+  background:#2874f0;
+  color:white;
+  text-decoration:none;
+  border-radius:2px;
+  font-size:14px;
+}
+.footer{
+  margin-top:50px;
+  background:#172337;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+}
+@media(max-width:600px){
+  .cart-container{
+    padding:30px 15px;
+  }
+  .cart-container h2{
+    font-size:18px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <div class="logo">Flipkart</div>
+  <div class="cart-text">Cart</div>
+</div>
+<div class="cart-container">
+  <div class="cart-img">🛒</div>
+  <h2>Your cart is empty!</h2>
+  <p>Add items to it now.</p>
+  <a href="index.html" class="shop-btn">Shop Now</a>
+</div>
+</body>
+</html>

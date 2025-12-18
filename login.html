@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f1f3f6;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            display: flex;
+            background-color: white;
+            width: 700px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .login-left {
+            padding: 40px;
+            flex: 1;
+        }
+
+        .login-left h2 {
+            color: #2874f0;
+            margin-bottom: 20px;
+        }
+
+        .login-left p {
+            margin-bottom: 20px;
+            color: #878787;
+        }
+
+        .login-left input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+        }
+
+        .login-left button {
+            width: 100%;
+            padding: 12px;
+            background-color: #fb641b;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .login-left button:hover {
+            background-color: #e05500;
+        }
+
+        .forgot, .signup {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #2874f0;
+        }
+
+        .login-left a {
+            color: #2874f0;
+            text-decoration: none;
+        }
+
+        .login-right {
+            flex: 1;
+            background-color: #2874f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-right img {
+            width: 80%;
+        }
+
+        @media(max-width: 768px) {
+            .login-box {
+                flex-direction: column;
+                width: 90%;
+            }
+            .login-right {
+                width: 100%;
+                padding: 20px 0;
+            }
+            .login-left {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-left">
+                <h2>Login</h2>
+                <p>Get access to your Orders, Wishlist and Recommendations</p>
+                <form>
+                    <input type="text" placeholder="Enter Email/Mobile" required>
+                    <input type="password" placeholder="Enter Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p class="forgot">Forgot? <a href="#">Reset Password</a></p>
+                <p class="signup">New to Flipkart? <a href="#">Sign Up</a></p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
